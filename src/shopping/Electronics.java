@@ -27,12 +27,14 @@ public class Electronics extends Product {
         return 4.00*productWeight(this.weight) + 4.50*productDestination(this.distance);
     }
     
+    @Override
     public double productWeight(double weight)
     {
         this.weight = weight;
         return weight;
     }
     
+    @Override
     public double productDestination(double distance)
     {
         this.distance = distance;

@@ -27,12 +27,14 @@ public class Clothing extends Product {
         return 2.50*productWeight(this.weight) + 3.50*productDestination(this.distance);
     }
     
+    @Override
     public double productWeight(double weight)
     {
         this.weight = weight;
         return weight;
     }
     
+    @Override
     public double productDestination(double distance)
     {
         this.distance = distance;
